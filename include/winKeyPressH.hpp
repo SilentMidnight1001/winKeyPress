@@ -147,6 +147,7 @@ vector<int> oneKeyCode;  // 一个键位的键值
 //vector<void (*)()>twoKeyFunc;
 //vector<void (*)()>oneKeyFunc;
 
+// 存放快捷键函数的容器，可以存放对象函数 //
 vector<std::function<void()>>fourKeyFunc;
 vector<std::function<void()>>threeKeyFunc;
 vector<std::function<void()>>twoKeyFunc;
@@ -207,6 +208,8 @@ public:
 
 // 回调清理函数 //
 void ExitCheckWork();
+
+void winKeyPressHelp();
 
 
 

@@ -2022,10 +2022,3 @@ int main() {
 )";
     printf("%s\n", user_help.c_str());
 }
-
-
-int main()
-{
-    winKeyPressHelp();
-    return 0;
-}
