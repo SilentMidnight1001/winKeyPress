@@ -1,0 +1,5 @@
+**中文介绍**  
+WinKeyPress 是一款专为Windows平台设计的自动化开发库，提供鼠标/键盘模拟、热键注册、剪贴板操作等核心功能。其通过直接调用Windows API实现低延迟响应（毫秒级），支持跨线程控制和链式操作组合事件。开发者可轻松实现鼠标精准坐标移动、多键位组合触发、全局热键注册等场景，适用于自动化脚本、测试工具、快捷操作增强等开发。库内集成资源自动清理机制，新增v1.1版本支持动态注销监听事件与热键重置，满足运行时灵活配置需求。编译仅需链接基础系统库，兼容C++11及以上标准。
+
+**English Introduction**  
+WinKeyPress is a Windows automation library offering mouse/keyboard simulation, hotkey registration, and clipboard operations. With direct Windows API calls, it achieves millisecond-level latency and supports cross-thread control and chained event composition. Developers can implement pixel-precise mouse movements, multi-key combinations, and global hotkeys for scenarios like automated scripts, testing tools, and workflow optimization. The library features automatic resource cleanup and v1.1 updates enable dynamic unregistration of listeners and hotkey resetting. Compatible with C++11+, it requires only basic system libraries (User32/Ole32) for compilation, providing lightweight integration for desktop automation projects.
