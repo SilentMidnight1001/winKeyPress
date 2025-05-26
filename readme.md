@@ -309,6 +309,29 @@ for (auto& file : files) {
 }  
 ```  
 
+### 3. 文件处理事件
+#### 类：
+`FileEvent` - 返回指定目录下的所有文件和子目录名称
+
+| 函数名        | 类型   | 说明   |  
+|------------|------|------|  
+| RemoveFile | bool | 删除文件 |  
+| CreateDir  | bool | 创建目录   |  
+
+**返回值**:  
+`vector<string>` 包含文件/目录名的容器
+
+```cpp  
+int main()
+{
+    FileEvent f;
+    bool a = f.CreateDir("../Test");
+    bool b = f.RemoveFile("../Test/Test.txt");
+    cout<<a<<endl;
+    return 0;
+}
+```  
+
 ---  
 
 ## 清理与多线程
@@ -392,4 +415,6 @@ int main() {
 2. MouseEvent新增功能，默认点击1次，按钮为左键 `MouseClick(int x, int y)`
 3. GetImagePosition移动至图像处理类 `ImageEvent`
 4. 新增命名空间 `wkp`，存在两个功能:`isAdmin`、`openAdmin`用于判断是否为管理员权限，与以管理员权限打开可执行文件
+5. 新增文件事件类 `FileEvent`存在两个功能: `RemoveFile`、 `CreateDir`
+6. RemoveFile已被弃用，现在它与创建文件夹函数一起放在FileEvent类中，后续这个类将退出新功能
 [返回目录](#目录)  
